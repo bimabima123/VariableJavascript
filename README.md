@@ -71,7 +71,7 @@ Pada saat kapan variabel var,let dan const dapan di pakai ?
   ```
  ### 3. Jika var sudah tidak digunakan lagi / sudah tidak jaman, seharusnya pakai apa?
  
- Namun saat ini karna syntaks var sudah lama , maka sekarang yang dipakai adalah Syntaks Let .
+ Saat ini karna syntaks var sudah lama , maka sekarang yang dipakai adalah Syntaks Let .
  karna let itu hampir sama dengan const dan var.
  
  ### 4 .Apa itu scope ?
