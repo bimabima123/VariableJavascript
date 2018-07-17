@@ -1,14 +1,14 @@
 # bima-variable-js
 
-Perbedaan variable var,Let, dan Cosnt.
+## 1 . Perbedaan variable var, let, dan const.
 
- semua Varible ini termasuk sintaks yang di siapkan dari ES6 , jadi ini bentuk default dan tidak dapat dibuat sendiri atau di edit.
+semua Varibel ini termasuk sintaks yang di siapkan oleh Javascript , jadi ini bentuk default dan tidak dapat dibuat sendiri atau di edit.
 
-*varible var 
+### varibel var 
   Pendeklarasian variabel yang dapat diubah ( reassign ) isinya, bersifat function-scoped.
   
-  example.
-    Var didalam Fungsi.
+  Contoh
+    var didalam Fungsi.
 ```javascript
     function variableVar(){
       for(var i = 0; i<5; i++){
@@ -20,12 +20,12 @@ Perbedaan variable var,Let, dan Cosnt.
     variableVar();
  ```
     
-   example.
-   Var diluar Fungsi.
-    jika var dideklarasikan di luar function itu variable bersifat Global.
+ Contoh
+   var diluar Fungsi.
+    jika var dideklarasikan di luar function itu variabel bersifat Global.
   ```javascript
     var i = 0;
-    function VariableVar(){
+    function variableVar(){
       for(i<5;i++){
         console.log(i); // 0,1,2,3,4
       }
@@ -34,10 +34,10 @@ Perbedaan variable var,Let, dan Cosnt.
     console.log(i) // 5
   ````
     
- *Variable let 
+ ### Variabel let 
  Mirip dengan var nilainya dapat diubah kembali (reassign), namun bersifat block-scoped.
 ```javascript
- function VariableLet(x) {
+ function variableLet(x) {
   if(x > 1) {
     let name = "Belajar Javascript"
         name = 'Hello World'
@@ -47,11 +47,11 @@ Perbedaan variable var,Let, dan Cosnt.
 }
 VariableLet()
 ```
-  *Variable Const
-  Hampir mirip dengan const bersifat block-scoped, bedanya const nilainya tidak dapat diubah.
+ ### Variabel const
+ Hampir mirip dengan const bersifat block-scoped, bedanya const nilainya tidak dapat diubah.
   
  ```javascript
-function VariableConst(x){
+function variableConst(x){
   if(x > 1) {
     const name = "John"
           name = "Doe"
@@ -61,26 +61,31 @@ function VariableConst(x){
 }
 VariableConst()
 ```
+### 2. Kapan menggunakan let dan kapan menggunakan const
 
-Pada saat kapan variable var,let dan const dapan di pakai ?
+Pada saat kapan variabel var,let dan const dapan di pakai ?
  ```note
-  *variable var dapan dipakai ketika ingin data selalu muncul walaupun variable nya tetap sama.
-  *variable Let dapat dipakai ketika ingin data data objek nya saja yang di ganti.
-  *Variable Const dapat dipakai ketika ingin data objek itu tetap atau tidak berubah berubah
+  1. variable var dapan dipakai ketika ingin data selalu muncul walaupun variable nya tetap sama.
+  2. variable Let dapat dipakai ketika ingin data data objek nya saja yang di ganti.
+  3. Variable Const dapat dipakai ketika ingin data objek itu tetap atau tidak berubah berubah
   ```
-  
- Namun saat ini karna syntax var sudah lama , maka sekarang yang dipakai adalah Syntax Let .
+ ### 3. Jika var sudah tidak digunakan lagi / sudah tidak jaman, seharusnya pakai apa?
+ 
+ Namun saat ini karna syntaks var sudah lama , maka sekarang yang dipakai adalah Syntaks Let .
  karna let itu hampir sama dengan const dan var.
  
- Scope itu merupakan aksebilitas variable,fungsi dan objek dibeberapa bagian dari kode selama waktu proses.
+ ### 4 .Apa itu scope ?
+ 
+ Scope itu merupakan aksebilitas variabel,fungsi dan objek dibeberapa bagian dari kode selama waktu proses.
  scope di bagi menjadi dua.
  ```
  local scope
  global scope
  
  ```
- Local Scope , variable yang dapat diakses di ruang lingkup function saja .
- example.
+ 
+ Local Scope , variabel yang dapat diakses di ruang lingkup function saja .
+ Contoh
  ```javascript
  function localScope(){
   for(var i = 0 ; i < 10 ; i++){
@@ -90,8 +95,8 @@ Pada saat kapan variable var,let dan const dapan di pakai ?
  
  localScope();
  ```
- Global Scope , variable yang dapat diakses dimana saja .
- example.
+ Global Scope , variabel yang dapat diakses dimana saja .
+ Contoh
  ```javascript
  var i = 0 ; 
  function globalScope(){
