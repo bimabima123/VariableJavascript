@@ -68,3 +68,37 @@ Pada saat kapan variable var,let dan const dapan di pakai ?
   *variable Let dapat dipakai ketika ingin data data objek nya saja yang di ganti.
   *Variable Const dapat dipakai ketika ingin data objek itu tetap atau tidak berubah berubah
   ```
+  
+ Namun saat ini karna syntax var sudah lama , maka sekarang yang dipakai adalah Syntax Let .
+ karna let itu hampir sama dengan const dan var.
+ 
+ Scope itu merupakan aksebilitas variable,fungsi dan objek dibeberapa bagian dari kode selama waktu proses.
+ scope di bagi menjadi dua.
+ ```
+ local scope
+ global scope
+ 
+ ```
+ Local Scope , variable yang dapat diakses di ruang lingkup function saja .
+ example.
+ ```javascript
+ function localScope(){
+  for(var i = 0 ; i < 10 ; i++){
+   console.log(i);
+  }
+ }
+ 
+ localScope();
+ ```
+ Global Scope , variable yang dapat diakses dimana saja .
+ example.
+ ```javascript
+ var i = 0 ; 
+ function globalScope(){
+   for(i;i<5;1++){
+     console.log(i) //0,1,2,3,4
+   }
+ }
+   globalScope()
+   console.log(i) //5
+ ```
