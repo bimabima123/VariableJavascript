@@ -95,7 +95,8 @@ function javascript(){
 javascript();
 //console.log(o);//ini error
 
-//tapi jika dideklarasikan di luar function dapat berjalan
+//tapi jika dideklarasikan di luar function dapat berjalan karna
+//variable bersifat global.
 
 console.log("deklarasi di luar function");
 
